@@ -6,7 +6,15 @@
 	const sendMessageBtn = document.getElementById('send-message-button');
 	const chatMessageText = document.getElementById('chat-message');
 
-	sendMessageBtn.addEventListener('click', () => {
+	sendMessageBtn.addEventListener('click', sendMessage);
+	chatMessageText.addEventListener('keydown', (e) => {
+		if(e.keyCode === 13) {
+			sendMessage();
+			e.preventDefault();
+		}
+	});
+
+	function sendMessage(){
 		// 1. get message contents from text area
 		const message = chatMessageText.value;
 
@@ -15,7 +23,7 @@
 
 		// 3. clear text area
 		chatMessageText.value = '';
-	});
+	}
 
 	chatMessages.on('child_added', snapshot => {
 		// 1. create element
