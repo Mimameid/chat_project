@@ -36,6 +36,9 @@
 		
 		// 3. append element to chat log
 		chatLogElem.appendChild(element);
+
+		// 4. scroll the chat log down
+		chatLogElem.scrollTop = chatLogElem.scrollHeight;
 	});
 
 })();
