@@ -8,6 +8,7 @@ body {
 	height: 300px;
 	border: 1px solid #000;
 	word-wrap: break-word;
+	white-space: pre-wrap;
 }
 
 #chat-log div:nth-of-type(odd) {
