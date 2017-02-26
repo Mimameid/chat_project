@@ -5,8 +5,18 @@
 	<title>chat_project</title>
 </head>
 <body>
-	
-<h1>Hello, world!</h1>
+
+<h1>Chat!</h1>
+
+<h2>Chat log</h2>
+<section id="chat-log"></section>
+
+<h2>Send messages</h2>
+<section>
+	<textarea id="chat-message" cols="30" rows="10" placeholder="Your message here"></textarea>
+	<button id="send-message-button">Send</button>
+</section>
+
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 <script>
 	// Initialize Firebase
@@ -19,5 +29,7 @@
 	};
 	firebase.initializeApp(config);
 </script>
+<script src="chat.js"></script>
+
 </body>
 </html>
