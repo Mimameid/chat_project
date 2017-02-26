@@ -3,20 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>chat_project</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+	<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-<h1>Chat!</h1>
-
+<!--Chat log-->
 <h2>Chat log</h2>
 <section id="chat-log"></section>
 
+<!--User interface-->
 <h2>Send messages</h2>
 <section>
 	<textarea id="chat-message" cols="30" rows="10" placeholder="Your message here"></textarea>
 	<button id="send-message-button">Send</button>
 </section>
 
+<!--Scripts-->
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 <script>
 	// Initialize Firebase

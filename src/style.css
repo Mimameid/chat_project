@@ -1,0 +1,15 @@
+body {
+	background-color: #ccc;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#chat-log {
+	overflow-y: scroll;
+	height: 300px;
+	border: 1px solid #000;
+	word-wrap: break-word;
+}
+
+#chat-log div:nth-of-type(odd) {
+	background-color: rgba(0, 0, 0, 0.1);
+}
